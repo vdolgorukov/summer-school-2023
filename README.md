@@ -1,5 +1,5 @@
 ---
 layout: home
-title:
+title: Логики групповых форм знания
 permalink: /
 ---
