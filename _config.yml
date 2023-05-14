@@ -1,0 +1,62 @@
+remote_theme: sighingnow/jekyll-gitbook
+
+title: Логическая семантика
+longtitle: Материалы к летней школе
+author: Виталий Долгоруков
+email:  v.dolgorukov@gmail.com    
+version:          1.0
+gitbook_version:  3.2.3
+
+rss: false
+facebook: false
+github:  false
+twitter: false
+youtube: false
+
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 6
+  ordered_list: true
+
+
+permalink:   /:categories/:output_ext
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            katex
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+    
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
+  - jekyll-latex
+  
+page_width: 800px
+
+destination:      ./_site
+incremental:      true
+regenerate:       true
+
+share-links-active:
+  twitter: false
+  facebook: false
+  linkedin: false
+  vk: false
